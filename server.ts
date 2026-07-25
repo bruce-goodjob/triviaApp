@@ -35,6 +35,7 @@ db.catch((err) => {
 ensureInitialData();
 
 app.get("/", (req, res) => {
+  console.log("Health check called");
   res.status(200).send("OK");
 });
 
